@@ -41,8 +41,8 @@ public class JwtService {
     private String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
         return Jwts.builder().setClaims(extraClaims).setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10)) // Token valido por 10 horas
-                .signWith(key, SignatureAlgorithm.HS256).compact(); // Ajustado para usar HS256 con la clave segura
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 10))
+                .signWith(key, SignatureAlgorithm.HS256).compact();
     }
 
     private boolean isTokenExpired(String token) {

@@ -1,5 +1,6 @@
 package com.project_dbp.hack_final.config;
 
+import com.project_dbp.hack_final.usuario.UsuarioDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,10 +21,10 @@ import java.io.IOException;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final JwtService jwtService;
-    private final UserDetailsServiceImpl userService;
+    private final UsuarioDetailsServiceImpl userService;
 
     @Autowired
-    public JwtAuthenticationFilter(JwtService jwtService, UserDetailsServiceImpl userService) {
+    public JwtAuthenticationFilter(JwtService jwtService, UsuarioDetailsServiceImpl userService) {
         this.jwtService = jwtService;
         this.userService = userService;
     }
