@@ -3,12 +3,8 @@ package com.project_dbp.hack_final.message;
 import jakarta.persistence.GeneratedValue;
 import com.project_dbp.hack_final.chat.Chat;
 import jakarta.persistence.*;
-import lombok.Data;
-
 import java.util.Date;
-import java.util.List;
 
-@Data
 @Entity
 public class Message {
 

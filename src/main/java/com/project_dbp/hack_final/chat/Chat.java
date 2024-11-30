@@ -2,10 +2,12 @@ package com.project_dbp.hack_final.chat;
 
 import com.project_dbp.hack_final.usuario.Usuario;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
 @Entity
+@Getter
+@Setter
 public class Chat {
 
     @Id
