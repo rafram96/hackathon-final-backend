@@ -1,5 +1,6 @@
-package com.project_dbp.hack_final.config;
+package com.project_dbp.hack_final.auth;
 
+import com.project_dbp.hack_final.config.JwtService;
 import com.project_dbp.hack_final.usuario.Usuario;
 import com.project_dbp.hack_final.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

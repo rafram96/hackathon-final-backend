@@ -1,4 +1,4 @@
-package com.project_dbp.hack_final.config;
+package com.project_dbp.hack_final.auth;
 
 public class JwtAuthenticationResponse {
     private String token;
